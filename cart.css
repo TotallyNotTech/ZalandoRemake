@@ -77,6 +77,10 @@
     padding: 20px 0;
 }
 
+.descr-padding {
+    padding-right: 2em;
+}
+
 .btn-remove {
     padding: 0;
     margin: 0;
