@@ -8,51 +8,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Links to fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="cart.css">
-    <!-- TODO: put CSS into cart.css, fix favicon-->
-    <style>
-        .item-image {
-            width: 100px;
-            height: auto;
-        }
-        .summary-card {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .payment-icons img {
-            width: 40px;
-            margin-right: 8px;
-        }
-        .item-row {
-            border-bottom: 1px solid #e0e0e0;
-            padding: 20px 0;
-        }
-        .quantity-select {
-            width: 70px;
-        }
-
-        /* Style for the "Plus Premium Delivery" Tag */
-        .plus-badge {
-            background-color: #ff5a00;
-            color: white;
-            font-size: 10px;
-            font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 10px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-right: 5px;
-        }
-    </style>
 </head>
 <body>
     <div class="container my-4">
-        <h2>Your bag (3 items)</h2>
-        <p><i class="fas fa-truck"></i> <strong>Parcel shipped by Zalando<br>Wed, 06/11 - Thu, 07/11</strong></p>
+        <h2 class="font-roboto"><strong>Your bag (3 items)</strong></h2>
+        <p><i class="font-roboto fas fa-truck"></i>Parcel shipped by Zalando<br><strong>Wed, 06/11 - Thu, 07/11</strong></p>
         <div class="row">
             <!-- Items Section -->
             <div class="col-md-8">
@@ -62,13 +27,13 @@
                         <img src="https://img01.ztat.net/article/spp-media-p1/98ad71c799f749e9ac9a5bbb09f342ab/764ec91832e749fda1d13068c1398033.jpg?imwidth=303&filter=packshot" alt="Item 1" class="item-image">
                     </div>
                     <div class="col-7">
-                        <h6 class="font-merriweather">GANT</h6>
-                        <p class="font-merriweather">EXCLUSIVE HERITAGE 2.0 ANORAK - Summer jacket - vintage blue</p>
+                        <h6 class="font-merriweather fs-6">GANT</h6>
+                        <p class="font-merriweather fs-6">EXCLUSIVE HERITAGE 2.0 ANORAK - <span class="font-roboto">Summer jacket - vintage blue</span></p>
                         <p><strong>319,95 €</strong></p>
                         <p class="text-muted">Colour: vintage blue<br>Size: XL</p>
-                        <span class="plus-badge">PLUS</span>
-                        <span>Premium Delivery</span>
-                        <p><a href="#">Move to wish list</a></p>
+                        <p><span class="plus-badge">PLUS</span>
+                        <span class="font-roboto">Premium Delivery</span></p>
+                        <p><a class="font-roboto fw-bolder link-offset-2 link-offset-3-hover link-underline-opacity-0 link-underline-opacity-75-hover fs-6" href="#">Move to wish list</a></p>
                     </div>
                     <div class="col-2 text-right">
                         <!-- Dropdown -->

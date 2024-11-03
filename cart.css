@@ -2,3 +2,40 @@
 .font-merriweather {
     font-family: 'Merriweather', serif;
 }
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-image {
+    width: 100px;
+    height: auto;
+}
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.payment-icons img {
+    width: 40px;
+    margin-right: 8px;
+}
+.item-row {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+.quantity-select {
+    width: 70px;
+}
+
+/* Style for the "Plus Premium Delivery" Tag */
+.plus-badge {
+    background-color: #ff5a00;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+}
