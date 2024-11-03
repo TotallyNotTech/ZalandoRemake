@@ -2,6 +2,10 @@
   background-color: #d3f9e9;
 }
 
+.position-fixed {
+  position: fixed;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -24,7 +28,7 @@
   width: -webkit-fill-available;
 }
 .text-tertiary {
-  color: rgb(99, 40, 224);
+  color: #6328e0;
 }
 
 .place-content-center {
@@ -63,9 +67,20 @@
 }
 
 .image-box {
-  max-height: 560px;
+  max-height: 600px;
 }
 
+.align-self-end {
+  align-self: end;
+}
+
+.image-box-container {
+  margin-bottom: 100px;
+}
+
+.max-height {
+  max-height: 600px;
+}
 .heart-box {
   top: 8px;
   right: 0px;
