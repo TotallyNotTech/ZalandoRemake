@@ -44,12 +44,8 @@
       .product-card:hover {
         transform: translateY(-5px);
       }
-      .heart-container {
-      }
       .heart-container:hover {
         color: red;
-      }
-      .heart-container::before {
       }
       .brand-name {
         font-size: 14px;
@@ -232,83 +228,182 @@
     </div>
 
     <!-- Container for all product cards -->
-    <div class="p-3 d-flex flex-wrap">
+    <div class="p-3 d-flex flex-wrap" style="padding: 0 10px">
       <!-- Individual product card -->
-      <div class="product-card" style="width: 50%; padding: 0 10px">
-        <div class="card-content">
-          <img src="images/product.webp" style="max-width: 100%" />
+      <div class="card-content flex-grow-1">
+        <img src="images/product.webp" style="max-width: 100%" />
+        <div>
+          <div
+            style="padding-top: 10px"
+            class="d-flex align-items-center gap-2"
+          >
+            <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+            <i class="bi bi-info-circle fs-8"></i>
+          </div>
           <div>
-            <div
-              style="padding-top: 10px"
-              class="d-flex align-items-center gap-2"
+            <p class="m-0" style="font-family: 'Times New Roman', Times, serif">
+              PME Legend
+            </p>
+            <p
+              class="m-0"
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 100%;
+              "
             >
-              <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
-              <i class="bi bi-info-circle fs-8"></i>
-            </div>
-            <div>
-              <p
-                class="m-0"
-                style="font-family: 'Times New Roman', Times, serif"
-              >
-                PME Legend
-              </p>
-              <p
-                class="m-0"
-                style="
-                  font-family: 'Times New Roman', Times, serif;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
-                  max-width: 100%;
-                "
-              >
-                MIT HALBEM REISSVERSCHLUSS
-              </p>
-            </div>
+              MIT HALBEM REISSVERSCHLUSS
+            </p>
           </div>
         </div>
       </div>
-      <div class="" style="width: 50%; padding: 0 10px">
-        <div class="card-content">
+      <div class="card-content flex-grow-1">
+        <div
+          style="
+            position: absolute;
+            background-color: white;
+            right: 20px;
+            bottom: 205px;
+          "
+          class="px-2"
+        >
+          <i class="heart-container bi bi-heart fs-3"></i>
+        </div>
+        <img src="images/product.webp" style="max-width: 100%" />
+        <div>
           <div
-            style="
-              position: absolute;
-              background-color: white;
-              right: 20px;
-              bottom: 205px;
-            "
-            class="px-2"
+            style="padding-top: 10px"
+            class="d-flex align-items-center gap-2"
           >
-            <i class="heart-container bi bi-heart fs-3"></i>
+            <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+            <i class="bi bi-info-circle fs-8"></i>
           </div>
-          <img src="images/product.webp" style="max-width: 100%" />
           <div>
-            <div
-              style="padding-top: 10px"
-              class="d-flex align-items-center gap-2"
+            <p class="m-0" style="font-family: 'Times New Roman', Times, serif">
+              PME Legend
+            </p>
+            <p
+              class="m-0"
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 100%;
+              "
             >
-              <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
-              <i class="bi bi-info-circle fs-8"></i>
-            </div>
-            <div>
-              <p
-                class="m-0"
-                style="font-family: 'Times New Roman', Times, serif"
-              >
-                PME Legend
-              </p>
-              <p
-                class="m-0"
+              MIT HALBEM REISSVERSCHLUSS
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-4">
+      <div class="p-3" style="background-color: rgb(242, 213, 28)">
+        <div class="d-flex align-items-center gap-2">
+          <p class="m-0" style="font-size: 0.8rem">Sponsored</p>
+          <i class="bi bi-info-circle fs-8"></i>
+        </div>
+        <h4 class="mt-2 mb-1 fw-bold">G-SCHOCK x Central Cee</h4>
+        <h4 class="">Built different</h4>
+
+        <div class="d-flex gap-2">
+          <p class="fw-bold">Shop the 2100 Series</p>
+          <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
+      <div style="background-color: rgb(248, 232, 130)" class="p-3">
+        <div class="d-flex flex-wrap">
+          <div style="padding: 0 10px">
+            <div class="card-content">
+              <div
                 style="
-                  font-family: 'Times New Roman', Times, serif;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
-                  max-width: 100%;
+                  position: absolute;
+                  background-color: white;
+                  right: 20px;
+                  bottom: 205px;
                 "
+                class="px-2"
               >
-                MIT HALBEM REISSVERSCHLUSS
-              </p>
+                <i class="heart-container bi bi-heart fs-3"></i>
+              </div>
+              <img src="images/watch.webp" style="max-width: 100%" />
+              <div>
+                <div
+                  style="padding-top: 10px"
+                  class="d-flex align-items-center gap-2"
+                >
+                  <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+                  <i class="bi bi-info-circle fs-8"></i>
+                </div>
+                <div>
+                  <p
+                    class="m-0"
+                    style="font-family: 'Times New Roman', Times, serif"
+                  >
+                    PME Legend
+                  </p>
+                  <p
+                    class="m-0"
+                    style="
+                      font-family: 'Times New Roman', Times, serif;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      max-width: 100%;
+                    "
+                  >
+                    MIT HALBEM REISSVERSCHLUSS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 0 10px">
+            <div class="card-content">
+              <div
+                style="
+                  position: absolute;
+                  background-color: white;
+                  right: 20px;
+                  bottom: 205px;
+                "
+                class="px-2"
+              >
+                <i class="heart-container bi bi-heart fs-3"></i>
+              </div>
+              <img src="images/watch.webp" style="max-width: 100%" />
+              <div>
+                <div
+                  style="padding-top: 10px"
+                  class="d-flex align-items-center gap-2"
+                >
+                  <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+                  <i class="bi bi-info-circle fs-8"></i>
+                </div>
+                <div>
+                  <p
+                    class="m-0"
+                    style="font-family: 'Times New Roman', Times, serif"
+                  >
+                    PME Legend
+                  </p>
+                  <p
+                    class="m-0"
+                    style="
+                      font-family: 'Times New Roman', Times, serif;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      max-width: 100%;
+                    "
+                  >
+                    MIT HALBEM REISSVERSCHLUSS
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
