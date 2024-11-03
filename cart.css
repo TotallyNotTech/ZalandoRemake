@@ -7,6 +7,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* CSS for info header */
+.shop-icon {
+    margin-right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
 /* CSS for the order summary */
 .summary-card {
     background-color: #f8f9fa;
@@ -21,6 +28,18 @@
     width: 40px;
     margin-right: 8px;
 }
+
+.flex-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* CSS for items */
 .item-row {
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
