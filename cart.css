@@ -7,10 +7,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.item-image {
-    width: 100px;
-    height: auto;
-}
 /* CSS for the order summary */
 .summary-card {
     background-color: #f8f9fa;
@@ -29,6 +25,38 @@
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
 }
+
+.btn-remove {
+    padding: 0;
+    margin: 0;
+    min-width: 2.5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.btn-remove svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-remove:hover {
+    background-color: #d3d3d3;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+}
+
+.item-row-bottom {
+    padding: 20px 0;
+}
+
 .quantity-select {
     width: 70px;
 }
