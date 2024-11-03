@@ -24,6 +24,7 @@
 .full-width {
   width: -webkit-fill-available;
 }
+
 .text-tertiary {
   color: #6328e0;
 }
@@ -52,15 +53,15 @@
 }
 
 .accordion-item:first-of-type {
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .accordion-item:last-of-type {
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .cursor-pointer {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .image-box {
@@ -78,9 +79,39 @@
 .max-height {
   max-height: 600px;
 }
+
 .heart-box {
   top: 8px;
   right: 0px;
+}
+
+.deal-box {
+  bottom: 125px;
+  left: 0px;
+  font-size: 12px;
+  /* font-weight: 700; */
+  /* background-color: #d9000c; */
+  padding: 6px;
+}
+
+.deal-part {
+  background-color: #d9000c;
+}
+
+.deal-container {
+  max-width: 300px;
+}
+
+/* .deal-box + .heart-box {
+ right: 29px;
+} */
+
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  /* white-space: nowrap; */
 }
 
 .arrow-icon {
@@ -93,17 +124,17 @@
 
 @media (min-width: 1000px) {
   .ps-lg-custom {
-  padding-left: 390px;
-}
+    padding-left: 320px;
+  }
 
-.detail-view {
-  position: sticky;
-}
+  .detail-view {
+    position: sticky;
+  }
 
-.column-three {
-  max-width: 40%;
-  margin-left: 100px;
-}
+  .column-three {
+    max-width: 40%;
+    margin-left: 100px;
+  }
 }
 
 .h-100-vh {
@@ -126,54 +157,148 @@
   margin-right: 340px;
   margin-left: 340px;
 }
+
 /* .heart-hover:hover {
   border-width: 2px !important;
   cursor: pointer;
 } */
-
-
-.container {
-  display: flex;
-}
-
-.left-column {
-  width: 30%;
+.container-test {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.thumbnail {
-  width: 100%; /* Make thumbnails fit column width */
-  cursor: pointer;
-}
-
-.right-column {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Scroll container with padding to show side images */
+.scroll-container {
+  overflow: hidden;
+  /* Hides overflow */
   position: relative;
+  /* Allows for the gradient overlay if needed */
 }
 
-.large-image {
-  width: 100%; /* Adjust as needed */
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+/* Horizontal scrolling row */
+.scrollable-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  /* Enables horizontal scrolling */
+  overflow-y: hidden;
+  /* Prevents vertical scrolling */
+  white-space: nowrap;
+  /* Prevents line breaks */
+  gap: 10px;
+  /* Space between thumbnails */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+  padding: 10px 0;
+  /* Vertical padding */
 }
 
-/* Display the appropriate large image when hovering over a thumbnail */
-.thumbnail:hover ~ .right-column .large-image {
-  opacity: 0; /* Hide all images first */
+/*
+.thumbnail {
+  flex: 0 0 auto;             
+ width: 100px;                
+  height: 100px;                  
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
 }
 
-.thumbnail:nth-child(1):hover ~ .right-column .large-image:nth-child(1),
-.thumbnail:nth-child(2):hover ~ .right-column .large-image:nth-child(2),
-.thumbnail:nth-child(3):hover ~ .right-column .large-image:nth-child(3) {
-  opacity: 1; /* Show the corresponding large image */
+/* Optional: Hides scrollbar for cleaner look */
+.scrollable-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-thumbnails {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Make thumbnails appear out of bounds */
+.scrollable-thumbnails {
+  margin-left: -30px;
+  /* Move left thumbnail out of the container */
+  margin-right: -30px;
+  /* Move right thumbnail out of the container */
+  padding-left: 30px;
+  /* Add padding to create space for scrolling */
+  padding-right: 30px;
+  /* Same for the right side */
+}
+
+.similar-products h3 {
+  font-size: 14px;
+}
+
+.similar-products p {
+  font-size: 12px;
+
 }
 
 
+.form-check-input {
+  width: 24px;
+  height: 24px;
+}
+
+
+.form-check-input:checked {
+  background-color: black;
+}
+table {
+  width: 100%;
+  /* Full width for the table */
+  border-collapse: collapse;
+  /* Removes space between cells */
+  border: none;
+  /* No borders for the table */
+}
+
+td {
+  width: 304px;
+  /* Set the width of each cell */
+  height: 24px;
+  /* Set the height of each cell */
+  padding: 0;
+  /* No padding for exact height */
+  text-align: left;
+  /* Aligns text to the left */
+  border: none;
+  /* No borders for the cells */
+  padding: 0 8px 12px 8px;
+}
+
+td:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.newsletter-section {
+  background-color: #efeff0;
+  padding-top: 24px;
+}
+
+.newsletter-section .bg-white .border {
+  padding: 4px 8px 4px 8px;
+  font-size: 12px;
+}
+
+.newsletter-section h4 {
+  font-size: 16px;
+}
+
+.newsletter-section i {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1;
+}
+
+.width-max-content {
+  width: max-content;
+}
