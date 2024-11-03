@@ -89,8 +89,6 @@
   bottom: 125px;
   left: 0px;
   font-size: 12px;
-  /* font-weight: 700; */
-  /* background-color: #d9000c; */
   padding: 6px;
 }
 
@@ -102,16 +100,12 @@
   max-width: 300px;
 }
 
-/* .deal-box + .heart-box {
- right: 29px;
-} */
 
 .text-overflow {
   text-overflow: ellipsis;
   overflow: hidden;
   display: inline-block;
   width: 100%;
-  /* white-space: nowrap; */
 }
 
 .arrow-icon {
@@ -158,76 +152,42 @@
   margin-left: 340px;
 }
 
-/* .heart-hover:hover {
-  border-width: 2px !important;
-  cursor: pointer;
-} */
 .container-test {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-/* Scroll container with padding to show side images */
 .scroll-container {
   overflow: hidden;
-  /* Hides overflow */
   position: relative;
-  /* Allows for the gradient overlay if needed */
 }
 
-/* Horizontal scrolling row */
 .scrollable-thumbnails {
   display: flex;
   overflow-x: auto;
-  /* Enables horizontal scrolling */
   overflow-y: hidden;
-  /* Prevents vertical scrolling */
   white-space: nowrap;
-  /* Prevents line breaks */
   gap: 10px;
-  /* Space between thumbnails */
   scroll-behavior: smooth;
-  /* Smooth scrolling */
   padding: 10px 0;
-  /* Vertical padding */
 }
 
-/*
-.thumbnail {
-  flex: 0 0 auto;             
- width: 100px;                
-  height: 100px;                  
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: #333;
-}
 
-/* Optional: Hides scrollbar for cleaner look */
 .scrollable-thumbnails::-webkit-scrollbar {
   display: none;
 }
 
 .scrollable-thumbnails {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
-/* Make thumbnails appear out of bounds */
 .scrollable-thumbnails {
   margin-left: -30px;
-  /* Move left thumbnail out of the container */
   margin-right: -30px;
-  /* Move right thumbnail out of the container */
   padding-left: 30px;
-  /* Add padding to create space for scrolling */
   padding-right: 30px;
-  /* Same for the right side */
 }
 
 .similar-products h3 {
@@ -251,24 +211,16 @@
 }
 table {
   width: 100%;
-  /* Full width for the table */
   border-collapse: collapse;
-  /* Removes space between cells */
   border: none;
-  /* No borders for the table */
 }
 
 td {
   width: 304px;
-  /* Set the width of each cell */
   height: 24px;
-  /* Set the height of each cell */
   padding: 0;
-  /* No padding for exact height */
   text-align: left;
-  /* Aligns text to the left */
   border: none;
-  /* No borders for the cells */
   padding: 0 8px 12px 8px;
 }
 
