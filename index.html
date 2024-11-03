@@ -44,6 +44,13 @@
       .product-card:hover {
         transform: translateY(-5px);
       }
+      .heart-container {
+      }
+      .heart-container:hover {
+        color: red;
+      }
+      .heart-container::before {
+      }
       .brand-name {
         font-size: 14px;
         color: #666;
@@ -122,7 +129,7 @@
             <i class="bi bi-list fs-1"></i>
           </div>
           <div class="d-flex align-items-center flex-grow-1 px-2">
-            <input placeholder="Search" class="border-0 w-100 h-100"></input>
+            <input placeholder="Search" class="border-0 w-100 h-100" />
             <i class="bi bi-search fs-3"></i>
           </div>
         </div>
@@ -130,17 +137,183 @@
     </div>
 
     <!-- Categories Navigation plus category specification -->
-     <div class="p-3">
-        <div class="align-items-center d-flex py-2 gap-2">
-            <i class="bi bi-arrow-left fs-3"></i>
-            <p class="mb-0 fw-bold">Men</p>
-        </div>
-        <h2 class="fw-bold">Clothing</h2>
-        <div>
-            <button class="border-0 bg-grey">T-shirts & Polos</button>
-        </div>
-     </div>
+    <div class="py-3 border-bottom">
+      <div class="align-items-center d-flex py-2 gap-2 px-3">
+        <i class="bi bi-arrow-left fs-3"></i>
+        <p class="mb-0 fw-bold">Men</p>
+      </div>
+      <h2 class="fw-bold px-3">Clothing</h2>
+      <div style="overflow: auto; white-space: nowrap; padding-left: 15px">
+        <button
+          style="background-color: rgb(239, 239, 240)"
+          class="border-0 p-2 fw-bold"
+        >
+          T-shirts & Polos
+        </button>
+        <button
+          style="background-color: rgb(239, 239, 240)"
+          class="border-0 p-2 fw-bold"
+        >
+          Shirts
+        </button>
+        <button
+          style="background-color: rgb(239, 239, 240)"
+          class="border-0 p-2 fw-bold"
+        >
+          Sweatshirts & Hoodies
+        </button>
+        <button
+          style="background-color: rgb(239, 239, 240)"
+          class="border-0 p-2 fw-bold"
+        >
+          Trousers
+        </button>
+        <button
+          style="background-color: rgb(239, 239, 240)"
+          class="border-0 p-2 fw-bold"
+        >
+          Jeans
+        </button>
+      </div>
+    </div>
 
+    <!-- Bottom Filters like branc-colour etc. -->
+    <div class="py-3">
+      <p class="fw-bold px-3">Top filters</p>
+      <div style="overflow: auto; white-space: nowrap; padding-left: 15px">
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Brand
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Size
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Colour
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Price
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Material
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2"
+        >
+          Multipack
+        </button>
+        <button
+          style="background-color: white; border: 1px solid black"
+          class="p-2 fw-bold"
+        >
+          <i class="bi bi-sliders px-2"></i>Show all filters
+        </button>
+      </div>
+    </div>
+
+    <div class="p-3 d-flex gap-2 align-items-center">
+      <p class="m-0">158,128 items</p>
+      <i class="bi bi-info-circle fs-4"></i>
+    </div>
+
+    <!-- Container for all product cards -->
+    <div class="p-3 d-flex flex-wrap">
+      <!-- Individual product card -->
+      <div class="product-card" style="width: 50%; padding: 0 10px">
+        <div class="card-content">
+          <img src="images/product.webp" style="max-width: 100%" />
+          <div>
+            <div
+              style="padding-top: 10px"
+              class="d-flex align-items-center gap-2"
+            >
+              <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+              <i class="bi bi-info-circle fs-8"></i>
+            </div>
+            <div>
+              <p
+                class="m-0"
+                style="font-family: 'Times New Roman', Times, serif"
+              >
+                PME Legend
+              </p>
+              <p
+                class="m-0"
+                style="
+                  font-family: 'Times New Roman', Times, serif;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  max-width: 100%;
+                "
+              >
+                MIT HALBEM REISSVERSCHLUSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" style="width: 50%; padding: 0 10px">
+        <div class="card-content">
+          <div
+            style="
+              position: absolute;
+              background-color: white;
+              right: 20px;
+              bottom: 205px;
+            "
+            class="px-2"
+          >
+            <i class="heart-container bi bi-heart fs-3"></i>
+          </div>
+          <img src="images/product.webp" style="max-width: 100%" />
+          <div>
+            <div
+              style="padding-top: 10px"
+              class="d-flex align-items-center gap-2"
+            >
+              <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+              <i class="bi bi-info-circle fs-8"></i>
+            </div>
+            <div>
+              <p
+                class="m-0"
+                style="font-family: 'Times New Roman', Times, serif"
+              >
+                PME Legend
+              </p>
+              <p
+                class="m-0"
+                style="
+                  font-family: 'Times New Roman', Times, serif;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  max-width: 100%;
+                "
+              >
+                MIT HALBEM REISSVERSCHLUSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   </body>
