@@ -1,4 +1,4 @@
-/* CSS class to apply Merriweather */
+/* CSS fonts */
 .font-merriweather {
     font-family: 'Merriweather', serif;
 }
@@ -11,9 +11,15 @@
     width: 100px;
     height: auto;
 }
+/* CSS for the order summary */
 .summary-card {
     background-color: #f8f9fa;
     padding: 20px;
+}
+
+.btn-checkout {
+    width: 100%;
+    border-radius: 0px;
 }
 .payment-icons img {
     width: 40px;
