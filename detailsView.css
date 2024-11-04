@@ -21,7 +21,6 @@
   text-align: center;
   flex-grow: 1;
   background-color: white;
-  /* width: 490px; */
 }
 
 #display-box:hover  {
@@ -155,24 +154,23 @@
   padding: 8px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .ps-lg-custom {
-    padding-left: 320px;
+    padding-left: calc(16.16vw - 56px);
+  }
+
+  .detail-view {
+    position: sticky;
+  }
+
+  .column-three {
+    margin-left: 100px;
   }
 
 
 }
 
-@media (min-width: 1000px) {
-  .detail-view {
-    position: sticky;
-  }
-
-  
-  .column-three {
-    max-width: 40%;
-    margin-left: 100px;
-  }
+@media (min-width: 1200px) and (max-width: 1300px) {
 
   .image-box-outer {
     height: 100vw;
@@ -183,6 +181,9 @@
     width: unset;
   }
 }
+
+
+
 
 
 table {
