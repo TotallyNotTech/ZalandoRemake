@@ -15,10 +15,50 @@
   margin-right: 16px;
 }
 
+.image-box-outer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  flex-grow: 1;
+  background-color: white;
+  /* width: 490px; */
+}
+
+#display-box:hover  {
+  border: 2px black solid;
+  cursor: pointer;
+}
+
+#display-box {
+  border: 2px solid transparent;
+}
+
+.text-field {
+  font-size: 16px !important;
+}
+
+
+.image-box {
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* width: 100%; */
+}
+
+.image-box:hover {
+  transform: scale(1.2);
+  transition: transform .4s;
+  cursor: zoom-in;
+}
 
 .number-box {
   width: 70px;
   height: 100px;
+}
+
+.number-box:hover {
+  border: 1px solid black !important;
 }
 
 .full-width {
@@ -115,20 +155,56 @@
   padding: 8px;
 }
 
-
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .ps-lg-custom {
     padding-left: 320px;
   }
 
+
+}
+
+@media (min-width: 1000px) {
   .detail-view {
     position: sticky;
   }
 
+  
   .column-three {
     max-width: 40%;
     margin-left: 100px;
   }
+
+  .image-box-outer {
+    height: 100vw;
+  }
+
+  .image-box img {
+    height: 100vw;
+    width: unset;
+  }
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+td {
+  width: 304px;
+  height: 24px;
+  padding: 0;
+  text-align: left;
+  border: none;
+  padding: 0 8px 12px 8px;
+}
+
+td:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
 
 .h-100-vh {
@@ -209,27 +285,7 @@
 .form-check-input:checked {
   background-color: black;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: none;
-}
 
-td {
-  width: 304px;
-  height: 24px;
-  padding: 0;
-  text-align: left;
-  border: none;
-  padding: 0 8px 12px 8px;
-}
-
-td:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
-}
 
 .newsletter-section {
   background-color: #efeff0;
@@ -244,6 +300,35 @@ td:hover {
 .newsletter-section h4 {
   font-size: 16px;
 }
+
+
+@media (max-width: 1000px) {
+  .newsletter-section h3 {
+  font-size: 18px;
+}
+
+.thumbnail img {
+  max-height: 320px;
+}
+
+.scrollable-thumbnails img {
+  max-height: 320px;
+}
+
+.deal-container {
+    max-width: 220px;
+}
+
+.image-box-outer img {
+  width: 100%;
+}
+
+#display-box {
+  max-width: 100%;
+}
+
+}
+
 
 .newsletter-section i {
   font-size: 12px;
