@@ -81,6 +81,16 @@
       <div
         class="d-flex p-3 justify-content-between align-items-center border-bottom"
       >
+        <div class="d-none d-lg-flex gap-2">
+          <div class="fw-bold p-2">Women</div>
+          <div
+            class="fw-bold p-2"
+            style="background-color: black; color: white"
+          >
+            Men
+          </div>
+          <div class="fw-bold p-2">Kids</div>
+        </div>
         <div id="svg">
           <svg
             width="132"
@@ -116,8 +126,12 @@
         </div>
       </div>
       <!-- search bar -->
-      <div>
-        <div class="d-flex border-bottom">
+      <div class="border-bottom d-none d-lg-block">
+        <div class="container">
+          <div>NEW IN</div>
+        </div>
+        <!-- Mobile -->
+        <div class="d-flex d-lg-none border-bottom">
           <div
             style="background-color: white; border-right: 1px solid #eee"
             class="border-right px-2"
@@ -133,7 +147,7 @@
     </div>
 
     <!-- Categories Navigation plus category specification -->
-    <div class="py-3 border-bottom">
+    <div class="py-3 border-bottom d-lg-none">
       <div class="align-items-center d-flex py-2 gap-2 px-3">
         <i class="bi bi-arrow-left fs-3"></i>
         <p class="mb-0 fw-bold">Men</p>
@@ -175,7 +189,7 @@
 
     <!-- Bottom Filters like branc-colour etc. -->
     <div class="py-3">
-      <p class="fw-bold px-3">Top filters</p>
+      <p class="fw-bold px-3 d-lg-none">Top filters</p>
       <div style="overflow: auto; white-space: nowrap; padding-left: 15px">
         <button
           style="background-color: white; border: 1px solid black"
@@ -228,9 +242,9 @@
     </div>
 
     <!-- Container for all product cards -->
-    <div class="p-3 d-flex flex-wrap" style="padding: 0 10px">
+    <div class="p-3 d-flex row" style="padding: 0 10px">
       <!-- Individual product card -->
-      <div class="card-content flex-grow-1">
+      <div class="card-content col-6 col-sm-4">
         <img src="images/product.webp" style="max-width: 100%" />
         <div>
           <div
@@ -259,7 +273,47 @@
           </div>
         </div>
       </div>
-      <div class="card-content flex-grow-1">
+      <div class="card-content col-6 col-sm-4">
+        <div
+          style="
+            position: absolute;
+            background-color: white;
+            right: 20px;
+            bottom: 205px;
+          "
+          class="px-2"
+        >
+          <i class="heart-container bi bi-heart fs-3"></i>
+        </div>
+        <img src="images/product.webp" style="max-width: 100%" />
+        <div>
+          <div
+            style="padding-top: 10px"
+            class="d-flex align-items-center gap-2"
+          >
+            <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+            <i class="bi bi-info-circle fs-8"></i>
+          </div>
+          <div>
+            <p class="m-0" style="font-family: 'Times New Roman', Times, serif">
+              PME Legend
+            </p>
+            <p
+              class="m-0"
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 100%;
+              "
+            >
+              MIT HALBEM REISSVERSCHLUSS
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-content col-6 col-sm-4">
         <div
           style="
             position: absolute;
@@ -314,10 +368,18 @@
           <i class="bi bi-arrow-right"></i>
         </div>
       </div>
-      <div style="background-color: rgb(248, 232, 130)" class="p-3">
+      <div style="background-color: rgb(248, 232, 130)">
         <div class="d-flex flex-wrap">
-          <div style="padding: 0 10px">
-            <div class="card-content">
+          <div
+            style="
+              padding-left: 15px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              overflow: scroll;
+            "
+            class="d-flex gap-3"
+          >
+            <div class="card-content col-sm-4">
               <div
                 style="
                   position: absolute;
@@ -360,9 +422,50 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div style="padding: 0 10px">
-            <div class="card-content">
+            <div class="card-content col-sm-4">
+              <div
+                style="
+                  position: absolute;
+                  background-color: white;
+                  right: 20px;
+                  bottom: 205px;
+                "
+                class="px-2"
+              >
+                <i class="heart-container bi bi-heart fs-3"></i>
+              </div>
+              <img src="images/watch.webp" style="max-width: 100%" />
+              <div>
+                <div
+                  style="padding-top: 10px"
+                  class="d-flex align-items-center gap-2"
+                >
+                  <p style="font-size: 0.8rem" class="m-0">Sponsored</p>
+                  <i class="bi bi-info-circle fs-8"></i>
+                </div>
+                <div>
+                  <p
+                    class="m-0"
+                    style="font-family: 'Times New Roman', Times, serif"
+                  >
+                    PME Legend
+                  </p>
+                  <p
+                    class="m-0"
+                    style="
+                      font-family: 'Times New Roman', Times, serif;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      max-width: 100%;
+                    "
+                  >
+                    MIT HALBEM REISSVERSCHLUSS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-content col-sm-4" style="padding-right: 15px">
               <div
                 style="
                   position: absolute;
