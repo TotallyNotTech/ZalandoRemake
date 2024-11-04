@@ -43,20 +43,12 @@
     flex-wrap: wrap;
 }
 
-
-.select-voucher {
-    border: 1px solid transparent;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
-    outline: none;
-    height: 4em;
-    width: 100%;
+.width-fit-content {
+    width: fit-content;
 }
 
-.select-voucher:hover {
-    border: 1px solid black;
-    background-color: #d3d3d3;
-    outline: none;
+.full-width {
+    width: -webkit-fill-available;
 }
 
 .drop-icon {
