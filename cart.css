@@ -1,0 +1,137 @@
+/* CSS fonts */
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS for info header */
+.shop-icon {
+    margin-right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* CSS for the order summary */
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.subtext-total {
+    font-size: 0.75em;
+}
+
+.btn-checkout {
+    width: 100%;
+    border-radius: 0px;
+}
+.payment-icons img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.flex-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.width-fit-content {
+    width: fit-content;
+}
+
+.full-width {
+    width: -webkit-fill-available;
+}
+
+.drop-icon {
+    margin-right: 10px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.voucher-icon {
+    margin-left: 10px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* CSS for items */
+.item-row {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.descr-padding {
+    padding-right: 2.75em;
+}
+
+.btn-remove {
+    padding: 0;
+    margin: 0;
+    min-width: 2.5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.select-quantity {
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 7em;
+    height: 2.5em;
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+.select-quantity:focus {
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.select-quantity option {
+    background-color: white;
+}
+
+.btn-remove svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-remove:hover {
+    background-color: #d3d3d3;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+}
+
+.item-row-bottom {
+    padding: 20px 0;
+}
+
+/* Style for the "Plus Premium Delivery" Tag */
+.plus-badge {
+    background-color: #ff5a00;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+}
