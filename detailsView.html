@@ -12,9 +12,27 @@
 </head>
 
 <body>
+  <div class="position-absolute end-0 position-fixed bg-black p-2 top-50 z-3 cursor-pointer">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+      style="transition-property: transform,transform-origin; transition-duration: 0.3s; transform-origin: center; transform: rotate(0deg); ">
+      <g clip-path="url(#clip0_990_39490)">
+        <path d="M13.4733 5H21V18.2102L16.14 22V18.2102H6V12.2941" stroke="white" stroke-width="2.03704"
+          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+          d="M10 5.00002C7.74328 5.00002 6.00049 3.25689 6.00049 1C6.00049 3.25689 4.25672 5.00021 2 5.00021C4.25672 5.00021 5.9997 6.74311 5.9997 9C5.9997 6.74311 7.74328 5.00002 10 5.00002Z"
+          stroke="white" stroke-width="2.03704" stroke-linejoin="round"
+          style="transition-property: transform; transition-duration: 0.3s; transform: scale(1.0);"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_990_39490">
+          <rect width="24" height="24"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
   <div class="container d-flex flex-column mt-4">
     <div class=" d-flex flex-column">
-      <div class="d-flex flex-xxl-row flex-column mx-auto">
+      <div class="d-flex flex-md-row flex-column mx-auto column-gap-4">
         <div class="d-flex flex-row top-0 h-100 detail-view">
           <div class="col-sm d-none d-xxl-flex flex-column row-gap-3 justify-content-xl-between column-first">
             <img íd=display-box
@@ -89,8 +107,7 @@
               <div class="dropdown">
                 <button
                   class="btn border border-dark rounded-0 dropdown-toggle w-100 d-flex justify-content-between align-items-center"
-                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <p class="text-secondary mb-0"> Bitte Größe wählen</p>
                   <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"
                     class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ _9l1hln DlJ4rT SpRgR2 nXkCf3 I_qHp3" focusable="false"
@@ -100,10 +117,34 @@
                     </path>
                   </svg>
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu full-width pt-0">
+                  <div class="border-top border-bottom border-1 border-opacity-10 border-dark p-2 d-flex flex-row">
+                    <p class="mb-0 fw-bold border-end border-1 border-opacity-10 border-dark pe-2">EU-Größe</p>
+                    <p class="mb-0 ps-2">Hersteller-Größe</p>
+                  </div>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">36<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">37<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center text-muted justify-content-between fw-semibold" href="#">37.5 <p class="mb-0 text-tertiary text-end text-decoration-none fw-bold">Größe anfragen</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">38<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">38.5<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">39<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">39.5<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">40<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">40.5<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">41<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">41.5<p
+                      class="text-muted mb-0">120,00€</p></a>
+                  <a class="dropdown-item d-flex flex-row column-gap-2 align-items-center fw-semibold" href="#">42<p
+                      class="text-muted mb-0">120,00€</p></a>
                 </div>
               </div>
               <div class="d-flex flex-row column-gap-2">
@@ -966,14 +1007,6 @@
               </div>
             </div>
         </div>
-        <div class="bg-white border border-opacity-25 border-dark position-relative arrow-icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
-            class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ I_qHp3" focusable="false" aria-hidden="true">
-            <path
-              d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.25 2.25 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75">
-            </path>
-          </svg>
-        </div>
         </section>
       </div>
     </div>
@@ -1389,14 +1422,6 @@
                 </div>
               </div>
             </div>
-        </div>
-        <div class="bg-white border border-opacity-25 border-dark position-relative arrow-icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
-            class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ I_qHp3" focusable="false" aria-hidden="true">
-            <path
-              d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.25 2.25 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75">
-            </path>
-          </svg>
         </div>
         </section>
       </div>
@@ -1815,14 +1840,6 @@
               </div>
             </div>
         </div>
-        <div class="bg-white border border-opacity-25 border-dark position-relative arrow-icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
-            class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ I_qHp3" focusable="false" aria-hidden="true">
-            <path
-              d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.25 2.25 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75">
-            </path>
-          </svg>
-        </div>
         </section>
       </div>
     </div>
@@ -2220,14 +2237,6 @@
               </div>
             </div>
         </div>
-        <div class="bg-white border border-opacity-25 border-dark position-relative arrow-icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
-            class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ I_qHp3" focusable="false" aria-hidden="true">
-            <path
-              d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.25 2.25 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75">
-            </path>
-          </svg>
-        </div>
         </section>
       </div>
     </div>
@@ -2310,7 +2319,7 @@
     </table>
 
   </div>
-  <div class="container mb-5 d-none d-lg-block">
+  <div class="container mb-5 d-none d-lg-block mt-5">
     <h3 class="fw-bold mb-5">Top Marken für Herren</h3>
     <table>
       <tr>
@@ -2524,7 +2533,7 @@
           <div class="fw-bolder">Deals, Drops und Trends</div>
           <div class="fw-semibold width-max-content">Direkt in deinen Posteingang</div>
         </h3>
-        <p class="fw-semibold">Finde Neuheiten, Style-Inspirationen und Sales in unserem Newsletter.</p>
+        <p class="fw-semibold fs-6">Finde Neuheiten, Style-Inspirationen und Sales in unserem Newsletter.</p>
       </div>
       <div class="bg-white py-4 py-lg-3 px-4 px-lg-5">
         <div id="text-field">
@@ -2539,13 +2548,13 @@
           </div>
           <div class="d-flex flex-column row-gap-2">
             <div class="form-check d-flex align-items-center">
-              <input class="form-check-input border-dark me-2 " type="radio" name="Damenmode" id="Damenmode">
+              <input class="form-check-input border-dark me-2 " type="radio" name="select" id="Damenmode">
               <label class="form-check-label" for="Damenmode">
                 Damenmode
               </label>
             </div>
             <div class="form-check d-flex align-items-center">
-              <input class="form-check-input border-dark me-2" type="radio" name="Herrenmode" id="Herrenmode" checked>
+              <input class="form-check-input border-dark me-2" type="radio" name="select" id="Herrenmode" checked>
               <label class="form-check-label" for="Herrenmode">
                 Herrenmode
               </label>
@@ -2615,6 +2624,7 @@
                       </div>
                     </div>
                   </div>
+                  <p class="text-tertiary fw-bold mb-0 mt-3 text-end"> Erfahre mehr (Login erforderlich)</p>
                 </div>
               </div>
             </div>
@@ -2631,9 +2641,9 @@
             </path>
           </svg>Meine Anmeldung bestätigen
         </button>
-        <i class="text-muted">Informationen dazu, wie Zalando mit deinen Daten umgeht, findest du in unserer <strong
+        <p class="text-muted">Informationen dazu, wie Zalando mit deinen Daten umgeht, findest du in unserer <strong
             class="cursor-pointer">Datenschutzerklärung</strong>. Du kannst dich jederzeit kostenfrei <strong
-            class="cursor-pointer">abmelden</strong>.</i>
+            class="cursor-pointer">abmelden</strong>.</p>
       </div>
     </div>
   </div>

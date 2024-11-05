@@ -2,6 +2,10 @@
   background-color: #d3f9e9;
 }
 
+p {
+  font-size: 14px;
+}
+
 .position-fixed {
   position: fixed;
 }
@@ -23,7 +27,7 @@
   background-color: white;
 }
 
-#display-box:hover  {
+#display-box:hover {
   border: 2px black solid;
   cursor: pointer;
 }
@@ -38,11 +42,9 @@
 
 
 .image-box {
-  /* overflow: hidden; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  /* width: 100%; */
 }
 
 .image-box:hover {
@@ -62,6 +64,17 @@
 
 .full-width {
   width: -webkit-fill-available;
+}
+
+.dropdown-menu.full-width {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+.dropdown-menu.full-width {
+  scrollbar-width: thin;
+  scrollbar-base-color: grey;
+
 }
 
 .text-tertiary {
@@ -106,6 +119,7 @@
 .image-box {
   max-height: 600px;
 }
+
 
 .align-self-end {
   align-self: end;
@@ -159,15 +173,20 @@
     padding-left: calc(16.16vw - 56px);
   }
 
-  .detail-view {
-    position: sticky;
-  }
-
   .column-three {
     margin-left: 100px;
+    margin-right: 50px;
   }
 
+}
 
+
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .image-box img {
+    width: 38vw;
+  }
+  
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -176,12 +195,13 @@
     height: 100vw;
   }
 
-  .image-box img {
-    height: 100vw;
-    width: unset;
-  }
 }
 
+@media (min-width: 768px) {
+  .detail-view {
+    position: sticky;
+  }
+}
 
 
 
@@ -287,10 +307,17 @@ td:hover {
   background-color: black;
 }
 
+.newsletter-section .bg-white {
+  max-width: 700px;
+}
 
 .newsletter-section {
   background-color: #efeff0;
   padding-top: 24px;
+}
+
+.newsletter-section h3 {
+  font-size: 24px;
 }
 
 .newsletter-section .bg-white .border {
@@ -305,36 +332,43 @@ td:hover {
 
 @media (max-width: 1000px) {
   .newsletter-section h3 {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
-.thumbnail img {
-  max-height: 320px;
-}
+  .thumbnail img {
+    max-height: 320px;
+  }
 
-.scrollable-thumbnails img {
-  max-height: 320px;
-}
+  .scrollable-thumbnails img {
+    max-height: 320px;
+  }
 
-.deal-container {
+  .deal-container {
     max-width: 220px;
-}
+  }
 
-.image-box-outer img {
-  width: 100%;
-}
 
-#display-box {
-  max-width: 100%;
-}
+  #display-box {
+    max-width: 100%;
+  }
 
 }
 
+@media (max-width: 768px) {
+  .image-box img {
+    width: 100%;
+  }
+}
 
-.newsletter-section i {
+
+.newsletter-section p.text-muted {
   font-size: 12px;
   font-style: normal;
-  line-height: 1;
+  line-height: 17px;
+}
+
+.newsletter-section p strong {
+  color: black;
 }
 
 .width-max-content {
